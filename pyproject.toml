@@ -42,9 +42,12 @@ keywords = [
 [dependency-groups]
 dev = [
     "build>=1.4.2",
+    "flake8>=7.3.0",
+    "isort>=8.0.1",
     "myst-parser>=5.0.0",
     "pytest>=9.0.2",
     "pytest-sugar>=1.1.1",
+    "ruff>=0.15.8",
     "sphinx>=9.0.4",
     "sphinx-autodoc-typehints>=3.6.1",
     "twine>=6.2.0",
@@ -74,4 +77,3 @@ addopts = "-ra"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
