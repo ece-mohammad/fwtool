@@ -228,18 +228,18 @@ Example output:
 
 ```json
 {
-  \"magic_ascii\": \"XLAB\",
-  \"magic_hex\": \"584c4142\",
-  \"version\": {
-    \"major\": 1,
-    \"minor\": 2,
-    \"patch\": 3,
-    \"string\": \"1.2.3\"
+  "magic_ascii": "XLAB",
+  "magic_hex": "584c4142",
+  "version": {
+    "major": 1,
+    "minor": 2,
+    "patch": 3,
+    "string": "1.2.3"
   },
-  \"size\": 123456,
-  \"crc\": {
-    \"int\": 439041101,
-    \"hex\": \"0x1a2b3c4d\"
+  "size": 123456,
+  "crc": {
+    "int": 439041101,
+    "hex": "0x1a2b3c4d"
   }
 }
 ```
@@ -288,30 +288,30 @@ Example output:
 
 ```json
 {
-  \"ok\": true,
-  \"magic_ok\": true,
-  \"size_ok\": true,
-  \"crc_ok\": true,
-  \"header\": {
-    \"magic_ascii\": \"XLAB\",
-    \"magic_hex\": \"584c4142\",
-    \"version\": {
-      \"major\": 1,
-      \"minor\": 2,
-      \"patch\": 3,
-      \"string\": \"1.2.3\"
+  "ok": true,
+  "magic_ok": true,
+  "size_ok": true,
+  "crc_ok": true,
+  "header": {
+    "magic_ascii": "XLAB",
+    "magic_hex": "584c4142",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "patch": 3,
+      "string": "1.2.3"
     },
-    \"size\": 123456,
-    \"crc\": {
-      \"int\": 439041101,
-      \"hex\": \"0x1a2b3c4d\"
+    "size": 123456,
+    "crc": {
+      "int": 439041101,
+      "hex": "0x1a2b3c4d"
     }
   },
-  \"payload\": {
-    \"size\": 123456,
-    \"crc\": {
-      \"int\": 439041101,
-      \"hex\": \"0x1a2b3c4d\"
+  "payload": {
+    "size": 123456,
+    "crc": {
+      "int": 439041101,
+      "hex": "0x1a2b3c4d"
     }
   }
 }

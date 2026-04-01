@@ -3,3 +3,4 @@ docs/build
 *.bin
 .vscode/launch.json
 .vscode/settings.json
+fwtool.code-workspace
