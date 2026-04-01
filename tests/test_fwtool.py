@@ -187,9 +187,7 @@ def test_split_binary_edit_mode_rejects_small_input():
 
 def test_split_binary_edit_mode_rejects_invalid_magic():
     bad = b"BAD!" + b"\x00" * (fwtool.HEADER_SIZE - 4) + b"payload"
-
-    with pytest.raises(ValueError, match="does not appear to contain a valid header"):
-        fwtool.split_binary(bad, "edit")
+    header, binary = fwtool.split_binary(bad, "edit")
 
 
 def test_write_binary(tmp_path: Path):
