@@ -314,7 +314,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--mode",
         choices=("attach", "edit"),
-        default="attach",
+        default="edit",
         help=(
             "attach: prepend a new header to a raw binary; "
             "edit: replace the existing header of a packaged binary"
