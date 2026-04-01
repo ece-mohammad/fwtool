@@ -59,7 +59,7 @@ from pathlib import Path
 from typing import Final
 
 from crccheck.crc import Crc32Mpeg2
-
+from fwtool import __version__
 
 HEADER_MAGIC: Final[bytes] = b"XLAB"
 HEADER_SIZE: Final[int] = 256
@@ -293,6 +293,11 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Add, update, inspect, or verify a 256-byte header in a binary file",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+    parser.add_argument(
+        "--version",
+        action="version",
+        version=f"%(prog)s {__version__}",
     )
     parser.add_argument(
         "binary",

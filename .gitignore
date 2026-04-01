@@ -4,3 +4,4 @@ docs/build
 .vscode/launch.json
 .vscode/settings.json
 fwtool.code-workspace
+dist

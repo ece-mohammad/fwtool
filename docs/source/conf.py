@@ -2,13 +2,13 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
-# If you do not use src-layout, use:
-# sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
+from fwtool import __version__
 
 project = "fwtool"
-copyright = "2025, Mohammad Mohsen"
 author = "Mohammad Mohsen"
-release = "1.0.0"
+version = __version__
+release = __version__
 
 extensions = [
     "sphinx.ext.autodoc",
