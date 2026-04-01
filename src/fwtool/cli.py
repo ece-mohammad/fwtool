@@ -409,11 +409,12 @@ def split_binary(data: bytes, mode: str) -> tuple[bytes, bytes]:
     existing_header = data[:HEADER_SIZE]
     payload = data[HEADER_SIZE:]
 
-    if existing_header[:4] != HEADER_MAGIC:
-        raise ValueError(
-            "Input file does not appear to contain a valid header "
-            f"(expected magic {HEADER_MAGIC!r})"
-        )
+    # allow editing headers that doesn't contain a valid header
+    # if existing_header[:4] != HEADER_MAGIC:
+    #     raise ValueError(
+    #         "Input file does not appear to contain a valid header "
+    #         f"(expected magic {HEADER_MAGIC!r})"
+    #     )
 
     return existing_header, payload
 
