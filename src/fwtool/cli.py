@@ -626,7 +626,7 @@ def write_binary_in_place(path: Path, data: bytes) -> None:
         raise
 
 
-def validate_args(args: argparse.Namespace) -> None:
+def validate_args(args: argparse.Namespace) -> None:  # noqa: C901
     """
     Validate command-line argument combinations.
 
