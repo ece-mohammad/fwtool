@@ -18,11 +18,11 @@ repos:
         always_run: true
         pass_filenames: false
 
-    -   id: ruff check
-        name: ruff check
+    -   id: ruff format
+        name: ruff format
         entry: ruff
         args:
-        -   check
+        -   format
         language: python
         always_run: true
         pass_filenames: false

@@ -5,3 +5,5 @@ docs/build
 .vscode/settings.json
 fwtool.code-workspace
 dist
+.todo
+.hypothesis
