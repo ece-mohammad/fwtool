@@ -52,7 +52,6 @@ dev = [
     "ruff>=0.15.8",
     "sphinx>=9.0.4",
     "sphinx-autodoc-typehints>=3.6.1",
-    "sphinx-rtd-theme>=3.1.0",
     "twine>=6.2.0",
 ]
 
