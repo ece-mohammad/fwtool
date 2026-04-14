@@ -2,6 +2,8 @@
 #    uv export --no-hashes --no-emit-local --only-dev --format requirements.txt -o requirements_dev.txt
 alabaster==1.0.0
     # via sphinx
+asttokens==3.0.1
+    # via stack-data
 babel==2.18.0
     # via sphinx
 backports-tarfile==1.2.0 ; python_full_version < '3.12' and platform_machine != 'ppc64le' and platform_machine != 's390x'
@@ -16,15 +18,23 @@ charset-normalizer==3.4.6
 colorama==0.4.6 ; os_name == 'nt' or sys_platform == 'win32'
     # via
     #   build
+    #   ipython
     #   pytest
     #   sphinx
 cryptography==46.0.6 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux'
     # via secretstorage
+decorator==5.2.1
+    # via ipython
 docutils==0.22.4
     # via
     #   myst-parser
     #   readme-renderer
     #   sphinx
+    #   sphinx-rtd-theme
+executing==2.2.1
+    # via stack-data
+flake8==7.3.0
+hypothesis==6.151.12
 id==1.6.1
     # via twine
 idna==3.11
@@ -35,12 +45,19 @@ importlib-metadata==9.0.0 ; python_full_version < '3.12' and platform_machine !=
     # via keyring
 iniconfig==2.3.0
     # via pytest
+ipython==9.10.1 ; python_full_version < '3.12'
+ipython==9.12.0 ; python_full_version >= '3.12'
+ipython-pygments-lexers==1.1.1
+    # via ipython
+isort==8.0.1
 jaraco-classes==3.4.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x'
     # via keyring
 jaraco-context==6.1.2 ; platform_machine != 'ppc64le' and platform_machine != 's390x'
     # via keyring
 jaraco-functools==4.4.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x'
     # via keyring
+jedi==0.19.2
+    # via ipython
 jeepney==0.9.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux'
     # via
     #   keyring
@@ -58,6 +75,10 @@ markdown-it-py==4.0.0
     #   rich
 markupsafe==3.0.3
     # via jinja2
+matplotlib-inline==0.2.1
+    # via ipython
+mccabe==0.7.0
+    # via flake8
 mdit-py-plugins==0.5.0
     # via myst-parser
 mdurl==0.1.2
@@ -75,12 +96,28 @@ packaging==26.0
     #   pytest
     #   sphinx
     #   twine
+parso==0.8.6
+    # via jedi
+pexpect==4.9.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
+    # via ipython
 pluggy==1.6.0
     # via pytest
+prompt-toolkit==3.0.52
+    # via ipython
+ptyprocess==0.7.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
+    # via pexpect
+pure-eval==0.2.3
+    # via stack-data
+pycodestyle==2.14.0
+    # via flake8
 pycparser==3.0 ; implementation_name != 'PyPy' and platform_machine != 'ppc64le' and platform_machine != 's390x' and platform_python_implementation != 'PyPy' and sys_platform == 'linux'
     # via cffi
+pyflakes==3.4.0
+    # via flake8
 pygments==2.20.0
     # via
+    #   ipython
+    #   ipython-pygments-lexers
     #   pytest
     #   readme-renderer
     #   rich
@@ -109,39 +146,59 @@ rich==14.3.3
     # via twine
 roman-numerals==4.1.0
     # via sphinx
+ruff==0.15.8
 secretstorage==3.5.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux'
     # via keyring
 snowballstemmer==3.0.1
     # via sphinx
+sortedcontainers==2.4.0
+    # via hypothesis
 sphinx==9.0.4 ; python_full_version < '3.12'
     # via
     #   myst-parser
     #   sphinx-autodoc-typehints
+    #   sphinx-rtd-theme
+    #   sphinxcontrib-jquery
 sphinx==9.1.0 ; python_full_version >= '3.12'
     # via
     #   myst-parser
     #   sphinx-autodoc-typehints
+    #   sphinx-rtd-theme
+    #   sphinxcontrib-jquery
 sphinx-autodoc-typehints==3.6.1 ; python_full_version < '3.12'
 sphinx-autodoc-typehints==3.9.11 ; python_full_version >= '3.12'
+sphinx-rtd-theme==3.1.0
 sphinxcontrib-applehelp==2.0.0
     # via sphinx
 sphinxcontrib-devhelp==2.0.0
     # via sphinx
 sphinxcontrib-htmlhelp==2.1.0
     # via sphinx
+sphinxcontrib-jquery==4.1
+    # via sphinx-rtd-theme
 sphinxcontrib-jsmath==1.0.1
     # via sphinx
 sphinxcontrib-qthelp==2.0.0
     # via sphinx
 sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
+stack-data==0.6.3
+    # via ipython
 termcolor==3.3.0
     # via pytest-sugar
+traitlets==5.14.3
+    # via
+    #   ipython
+    #   matplotlib-inline
 twine==6.2.0
+typing-extensions==4.15.0 ; python_full_version < '3.12'
+    # via ipython
 urllib3==2.6.3
     # via
     #   id
     #   requests
     #   twine
+wcwidth==0.6.0
+    # via prompt-toolkit
 zipp==3.23.0 ; python_full_version < '3.12' and platform_machine != 'ppc64le' and platform_machine != 's390x'
     # via importlib-metadata
